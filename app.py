@@ -19,10 +19,10 @@ DATA_DIR = Path(__file__).parent / "data"
 # --------------------------------------------------------------------------
 # Styling
 # --------------------------------------------------------------------------
+st.markdown("""
 <style>
-    .stApp { background-color: #0068c9 !important; }
+    .stApp { background-color: #f0f2f6 !important; }
     h1, h2, h3 { font-family: 'Trebuchet MS', sans-serif; color: #1C2541; }
-
     div[data-testid="stMetric"] {
         background-color: #FFFFFF !important;
         border: 1px solid #E2E5EA;
@@ -30,21 +30,8 @@ DATA_DIR = Path(__file__).parent / "data"
         border-radius: 6px;
         padding: 12px 16px;
     }
-    div[data-testid="stMetricValue"] {
-        color: #1C2541 !important;
-    }
-    div[data-testid="stMetricLabel"] {
-        color: #5A6472 !important;
-    }
-    div[data-testid="stMetricDelta"] {
-        color: #0B7A75 !important;
-    }
-
-    .anomaly-tag {
-        background-color: #FFE3D3; color: #B4491F; padding: 2px 8px;
-        border-radius: 4px; font-size: 0.8em; font-weight: 600;
-    }
 </style>
+""", unsafe_allow_html=True)
 
 
 # --------------------------------------------------------------------------
