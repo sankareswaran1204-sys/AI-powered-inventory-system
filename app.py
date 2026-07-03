@@ -30,8 +30,33 @@ st.markdown("""
         border-radius: 6px;
         padding: 12px 16px;
     }
+    div[data-testid="stMetricValue"] {
+        color: #1C2541 !important;
+    }
+    div[data-testid="stMetricLabel"] {
+        color: #5A6472 !important;
+    }
+    div[data-testid="stMetricDelta"] {
+        color: #0B7A75 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
+
+
+def style_fig(fig, **kwargs):
+    """Apply consistent light-theme styling to every Plotly figure.
+
+    plot_bgcolor controls the area inside the axes.
+    paper_bgcolor controls the area around the axes (labels/margins/frame) —
+    without setting this, the chart frame falls back to a dark default.
+    """
+    fig.update_layout(
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        font_color="#1C2541",
+        **kwargs,
+    )
+    return fig
 
 
 # --------------------------------------------------------------------------
@@ -111,7 +136,7 @@ if page == "Overview":
     )
     daily_rev = daily_rev.tail(30)
     fig = px.area(daily_rev, x="date", y="revenue", color_discrete_sequence=["#0B7A75"])
-    fig.update_layout(height=320, margin=dict(t=10, l=10, r=10, b=10), plot_bgcolor="white")
+    style_fig(fig, height=320, margin=dict(t=10, l=10, r=10, b=10))
     st.plotly_chart(fig, use_container_width=True)
 
     col1, col2 = st.columns(2)
@@ -121,7 +146,7 @@ if page == "Overview":
         cat_totals = cat_sales.groupby("category")["quantity"].sum().reset_index()
         fig2 = px.bar(cat_totals, x="category", y="quantity", color="category",
                       color_discrete_sequence=px.colors.qualitative.Prism)
-        fig2.update_layout(height=320, showlegend=False, margin=dict(t=10, l=10, r=10, b=10))
+        style_fig(fig2, height=320, showlegend=False, margin=dict(t=10, l=10, r=10, b=10))
         st.plotly_chart(fig2, use_container_width=True)
 
     with col2:
@@ -170,8 +195,8 @@ elif page == "Demand Forecasting":
     if not lr_forecast.empty:
         fig.add_trace(go.Scatter(x=lr_forecast["date"], y=lr_forecast["forecast_demand"],
                                   name="Linear trend baseline", line=dict(color="#E8A33D", dash="dot")))
-    fig.update_layout(height=420, margin=dict(t=20, l=10, r=10, b=10), plot_bgcolor="white",
-                       legend=dict(orientation="h", yanchor="bottom", y=1.02))
+    style_fig(fig, height=420, margin=dict(t=20, l=10, r=10, b=10),
+              legend=dict(orientation="h", yanchor="bottom", y=1.02))
     st.plotly_chart(fig, use_container_width=True)
 
     total_forecast = rf_forecast["forecast_demand"].sum()
@@ -187,7 +212,7 @@ elif page == "Demand Forecasting":
         }).sort_values("importance", ascending=False)
         fig_imp = px.bar(importances, x="importance", y="feature", orientation="h",
                           color_discrete_sequence=["#0B7A75"])
-        fig_imp.update_layout(height=300, margin=dict(t=10, l=10, r=10, b=10))
+        style_fig(fig_imp, height=300, margin=dict(t=10, l=10, r=10, b=10))
         st.plotly_chart(fig_imp, use_container_width=True)
 
 
@@ -235,8 +260,8 @@ elif page == "Reorder Optimization":
     fig.add_trace(go.Bar(x=top20["sku"], y=top20["current_stock"], name="Current stock", marker_color="#0B7A75"))
     fig.add_trace(go.Scatter(x=top20["sku"], y=top20["reorder_point"], name="Reorder point",
                               mode="markers+lines", marker=dict(color="#E8A33D", size=8)))
-    fig.update_layout(height=380, margin=dict(t=20, l=10, r=10, b=10), plot_bgcolor="white",
-                       legend=dict(orientation="h", yanchor="bottom", y=1.02))
+    style_fig(fig, height=380, margin=dict(t=20, l=10, r=10, b=10),
+              legend=dict(orientation="h", yanchor="bottom", y=1.02))
     st.plotly_chart(fig, use_container_width=True)
 
     with st.expander("Formulas used"):
@@ -274,7 +299,7 @@ elif page == "Anomaly Detection":
     with col1:
         fig = px.bar(comp_df, x="Model", y=["precision", "recall", "f1"], barmode="group",
                      color_discrete_sequence=["#0B7A75", "#E8A33D", "#1C2541"])
-        fig.update_layout(height=320, margin=dict(t=20, l=10, r=10, b=10))
+        style_fig(fig, height=320, margin=dict(t=20, l=10, r=10, b=10))
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
@@ -299,7 +324,7 @@ elif page == "Anomaly Detection":
     st.markdown("### Anomalies Over Time")
     daily_anom = if_df.groupby(if_df["date"].dt.date)["if_flag"].sum().reset_index()
     fig2 = px.bar(daily_anom, x="date", y="if_flag", color_discrete_sequence=["#B4491F"])
-    fig2.update_layout(height=280, margin=dict(t=10, l=10, r=10, b=10), yaxis_title="Anomalies flagged")
+    style_fig(fig2, height=280, margin=dict(t=10, l=10, r=10, b=10), yaxis_title="Anomalies flagged")
     st.plotly_chart(fig2, use_container_width=True)
 
 
