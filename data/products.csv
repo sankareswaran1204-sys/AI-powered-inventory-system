@@ -1,0 +1,61 @@
+product_id,sku,name,category,supplier,cost_price,selling_price,lead_time_days,ordering_cost,holding_cost_pct,reorder_level_baseline,demand_trend
+1,SKU-1001,Wireless Mouse,Electronics,Sunrise Imports,701.08,1188.32,7,224.34,0.114,35,seasonal_spike
+2,SKU-1002,USB-C Cable,Electronics,Bluepeak Supply Co,711.74,1007.33,11,162.6,0.156,15,stable
+3,SKU-1003,Bluetooth Earbuds,Electronics,Metro Wholesale,744.03,1264.16,7,188.65,0.11,16,seasonal_spike
+4,SKU-1004,Laptop Stand,Electronics,Sunrise Imports,687.12,1112.5,10,292.67,0.234,30,rising
+5,SKU-1005,Power Bank 10000mAh,Electronics,Prime Distributors,430.71,576.9,9,220.76,0.212,14,seasonal_spike
+6,SKU-1006,HDMI Cable 2m,Electronics,Prime Distributors,346.0,596.02,6,97.37,0.119,30,rising
+7,SKU-1007,Wireless Keyboard,Electronics,Prime Distributors,609.44,1032.05,4,225.07,0.147,34,seasonal_spike
+8,SKU-1008,Webcam HD,Electronics,Global Traders Ltd,360.98,562.95,12,220.62,0.121,34,rising
+9,SKU-1009,Portable SSD 500GB,Electronics,Global Traders Ltd,712.49,1352.57,8,245.18,0.169,31,stable
+10,SKU-1010,Smart Plug,Electronics,Sunrise Imports,120.79,229.69,3,167.77,0.185,12,stable
+11,SKU-1011,Basmati Rice 5kg,Groceries,Metro Wholesale,507.15,914.54,12,57.7,0.166,19,rising
+12,SKU-1012,Cooking Oil 1L,Groceries,Metro Wholesale,770.99,1164.62,7,64.58,0.142,37,stable
+13,SKU-1013,Wheat Flour 5kg,Groceries,Metro Wholesale,510.19,1023.19,14,151.6,0.222,29,rising
+14,SKU-1014,Sugar 1kg,Groceries,Prime Distributors,99.24,193.53,2,165.47,0.124,37,rising
+15,SKU-1015,Green Tea Pack,Groceries,Bluepeak Supply Co,632.76,1076.67,4,125.38,0.195,21,falling
+16,SKU-1016,Instant Noodles Box,Groceries,Metro Wholesale,123.85,268.22,3,277.15,0.205,23,seasonal_spike
+17,SKU-1017,Coffee Powder 200g,Groceries,Global Traders Ltd,705.3,1371.95,12,118.06,0.114,23,seasonal_spike
+18,SKU-1018,Salt 1kg,Groceries,Bluepeak Supply Co,198.08,312.05,7,194.8,0.127,23,stable
+19,SKU-1019,Honey 500g,Groceries,Sunrise Imports,653.13,1103.06,6,196.02,0.197,28,rising
+20,SKU-1020,Peanut Butter 400g,Groceries,Global Traders Ltd,56.62,98.78,7,132.47,0.122,30,stable
+21,SKU-1021,A4 Notebook,Stationery,Global Traders Ltd,170.12,362.8,14,136.72,0.189,27,rising
+22,SKU-1022,Gel Pen Pack,Stationery,Prime Distributors,444.43,890.84,14,70.68,0.173,30,seasonal_spike
+23,SKU-1023,Sticky Notes,Stationery,Metro Wholesale,523.12,902.98,12,132.89,0.178,18,falling
+24,SKU-1024,Highlighter Set,Stationery,Global Traders Ltd,747.14,1573.88,2,85.06,0.183,19,stable
+25,SKU-1025,Stapler,Stationery,Bluepeak Supply Co,267.49,506.49,11,242.16,0.116,31,seasonal_spike
+26,SKU-1026,Whiteboard Marker,Stationery,Bluepeak Supply Co,52.92,95.22,4,142.73,0.224,23,falling
+27,SKU-1027,File Folder Pack,Stationery,Prime Distributors,858.55,1340.91,10,113.99,0.24,25,rising
+28,SKU-1028,Pencil Box,Stationery,Bluepeak Supply Co,402.89,883.59,2,272.92,0.212,35,seasonal_spike
+29,SKU-1029,Correction Pen,Stationery,Sunrise Imports,476.6,755.09,2,215.42,0.156,33,rising
+30,SKU-1030,Sketch Pens Set,Stationery,Bluepeak Supply Co,250.97,537.86,11,110.24,0.118,12,rising
+31,SKU-1031,Desk Organizer,Home & Kitchen,Metro Wholesale,177.76,326.98,11,99.11,0.147,36,stable
+32,SKU-1032,Stainless Steel Bottle,Home & Kitchen,Global Traders Ltd,460.65,658.5,14,53.48,0.134,18,stable
+33,SKU-1033,Non-stick Pan,Home & Kitchen,Global Traders Ltd,127.21,223.34,14,195.28,0.13,30,seasonal_spike
+34,SKU-1034,LED Desk Lamp,Home & Kitchen,Metro Wholesale,670.31,950.47,11,80.94,0.239,12,falling
+35,SKU-1035,Storage Box,Home & Kitchen,Prime Distributors,449.95,853.37,6,121.61,0.239,38,rising
+36,SKU-1036,Kitchen Scale,Home & Kitchen,Bluepeak Supply Co,577.9,806.35,9,85.08,0.163,10,stable
+37,SKU-1037,Cutting Board,Home & Kitchen,Metro Wholesale,841.06,1702.24,7,246.19,0.103,24,rising
+38,SKU-1038,Ceramic Mug Set,Home & Kitchen,Bluepeak Supply Co,721.2,1088.56,12,182.69,0.191,37,stable
+39,SKU-1039,Laundry Basket,Home & Kitchen,Prime Distributors,383.06,626.98,14,212.98,0.23,22,falling
+40,SKU-1040,Wall Clock,Home & Kitchen,Global Traders Ltd,228.26,449.99,5,254.14,0.116,36,stable
+41,SKU-1041,Cotton T-Shirt,Apparel,Global Traders Ltd,148.63,303.53,6,85.97,0.238,19,rising
+42,SKU-1042,Formal Shirt,Apparel,Global Traders Ltd,155.18,217.86,5,55.29,0.108,15,rising
+43,SKU-1043,Denim Jeans,Apparel,Sunrise Imports,540.21,1033.23,12,129.5,0.176,21,seasonal_spike
+44,SKU-1044,Hooded Sweatshirt,Apparel,Prime Distributors,58.26,85.25,13,109.19,0.137,29,falling
+45,SKU-1045,Running Shorts,Apparel,Prime Distributors,63.34,103.64,14,75.42,0.225,25,rising
+46,SKU-1046,Woolen Socks Pack,Apparel,Bluepeak Supply Co,107.22,220.79,14,275.66,0.247,19,stable
+47,SKU-1047,Casual Cap,Apparel,Bluepeak Supply Co,585.39,1171.42,11,184.02,0.177,14,seasonal_spike
+48,SKU-1048,Rain Jacket,Apparel,Prime Distributors,358.88,673.12,8,116.62,0.121,23,falling
+49,SKU-1049,Track Pants,Apparel,Metro Wholesale,224.66,366.37,8,131.87,0.157,20,stable
+50,SKU-1050,Polo T-Shirt,Apparel,Prime Distributors,854.99,1816.61,5,170.23,0.149,23,seasonal_spike
+51,SKU-1051,Hand Sanitizer 200ml,Personal Care,Global Traders Ltd,594.28,1202.79,9,208.23,0.143,25,stable
+52,SKU-1052,Face Wash 100ml,Personal Care,Global Traders Ltd,631.42,1309.97,4,83.03,0.192,29,stable
+53,SKU-1053,Shampoo 400ml,Personal Care,Prime Distributors,94.35,202.13,11,289.72,0.22,14,stable
+54,SKU-1054,Toothpaste 150g,Personal Care,Global Traders Ltd,719.7,1548.38,12,113.35,0.189,11,stable
+55,SKU-1055,Body Lotion 250ml,Personal Care,Bluepeak Supply Co,170.74,308.78,2,166.5,0.178,27,stable
+56,SKU-1056,Sunscreen SPF50,Personal Care,Global Traders Ltd,453.09,833.52,12,282.81,0.118,33,rising
+57,SKU-1057,Shaving Cream,Personal Care,Bluepeak Supply Co,598.92,1004.24,13,217.81,0.15,33,seasonal_spike
+58,SKU-1058,Hair Oil 200ml,Personal Care,Global Traders Ltd,258.07,420.08,11,128.61,0.124,38,seasonal_spike
+59,SKU-1059,Lip Balm,Personal Care,Sunrise Imports,405.36,666.81,3,188.25,0.24,31,stable
+60,SKU-1060,Deodorant Spray,Personal Care,Global Traders Ltd,351.2,768.41,8,229.44,0.243,22,seasonal_spike
