@@ -21,7 +21,7 @@ DATA_DIR = Path(__file__).parent / "data"
 # --------------------------------------------------------------------------
 st.markdown("""
 <style>
-    .stApp { background-color: #F4F5F7; }
+    .stApp { background-color: #f0f2f6; }
     h1, h2, h3 { font-family: 'Trebuchet MS', sans-serif; color: #1C2541; }
     div[data-testid="stMetric"] {
         background-color: #FFFFFF;
